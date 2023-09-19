@@ -50,21 +50,23 @@ streamlit run main.py
 2. open the streamlit app at port `8501` 
 
 Conversion app with light and dark mode gif.
+
 ![conversion-gif](assets/conversion.gif)
 
-[conversion app demo]() powered by ![Streamlit Community Cloud](https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-lighttext.svg) 
+[conversion app demo]() powered by ![Streamlit Community Cloud](https://streamlit.io/images/brand/streamlit-mark-color.svg) 
 
 ## Roadmap
 
 - [x] streamlit app
 - [ ] RESTful API with FastAPI
 - [ ] Telegram-Bot Telegram Bot with Telebot
-- [x] Dockerize  
-        [x] Publish Docker image to GitHub container registry
+- [ ] Dockerize  
+    [ ] Publish Docker image to GitHub container registry
 - [ ] Multi-language Support
-        [ ] Amharic
-        [ ] Oromo
-        [ ] Tigrinya
+    [x] English
+    [ ] Amharic
+    [ ] Oromo
+    [ ] Tigrinya
 
 > See the [open issues](https://github.com/kidistbedilu/conversion/issues) for a full list of proposed features and known issues.
 
@@ -74,13 +76,13 @@ Any contributions you make are greatly appreciated. If you have a suggestion tha
 
 1. fork the project
 2. create your feature branch `git checkout -b feature/amazing-feature`
-3. commit your changes `git commit -m `feat: add amazing feature` use the [conventional-commit](https://www.conventionalcommits.org/en/v1.0.0/) specification
+3. commit your changes `git commit -m 'feat: add amazing feature'` use the [conventional-commit](https://www.conventionalcommits.org/en/v1.0.0/) specification
 4. push to the branch `git push origin feature/amazing-feature`
 5. open a pull request
 
 ## Contact
 
-Kidist Bedilu | kidistbedilu.com | me@kidistbedilu.com | @kidistbedilu
+Kidist Bedilu | [kidistbedilu.com](kidistbedilu.com) | [me@kidistbedilu.com](me@kidistbedilu.com) | [@kidistbedilu](@kidistbedilu)
 
 ## License
 
