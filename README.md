@@ -53,7 +53,7 @@ Conversion app with light and dark mode gif.
 
 ![conversion-gif](assets/conversion.gif)
 
-[conversion app demo]() powered by <img src="https://streamlit.io/images/brand/streamlit-mark-color.svg" width="30" height="30"> 
+[conversion app demo]() powered by [Streamlit Community Cloud](https://streamlit.io/cloud) <img src="https://streamlit.io/images/brand/streamlit-mark-color.svg" width="50" height="50"> 
 
 ## Roadmap
 
