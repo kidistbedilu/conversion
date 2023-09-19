@@ -21,6 +21,18 @@ def lbs_to_kg():
 def kg_to_lbs():
     st.session_state.lbs = st.session_state.kg*2.2046
 
+def inn_to_cm():
+    st.session_state.cm = st.session_state.inn*2.54
+
+def cm_to_inn():
+    st.session_state.inn = st.session_state.cm/2.54
+
+def c_to_f():
+    st.session_state.f = (st.session_state.c*9/5)+32
+
+def f_to_c():
+    st.session_state.c = (st.session_state.f-32)*5/9
+
 #col1, buff, col2 = st.columns([2,1,2])
 col1, buff, col2 = st.columns(3)
 with col1:
@@ -42,3 +54,17 @@ with col5:
 
 with col6:
     kilogram = st.number_input('Kilograms (kg):', key='kg', on_change = kg_to_lbs)
+
+col7, buff, col8 = st.columns(3)
+with col7:
+    inch = st.number_input('Inch (in):', key='inn', on_change = inn_to_cm)
+
+with col8:
+    centimeter = st.number_input('Centimeter (cm):', key='cm', on_change = cm_to_inn)
+
+col9, buff, col10 = st.columns(3)
+with col9:
+    celsius = st.number_input('Celsius (\N{DEGREE SIGN}C):', key='c', on_change = c_to_f)
+
+with col10:
+    fahrenheit = st.number_input('Fahrenheit (\N{DEGREE SIGN}F):', key='f', on_change = f_to_c)
