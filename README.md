@@ -53,7 +53,7 @@ Conversion app with light and dark mode gif.
 
 ![conversion-gif](assets/conversion.gif)
 
-[conversion app demo]() powered by ![Streamlit Community Cloud](https://streamlit.io/images/brand/streamlit-mark-color.svg) 
+[conversion app demo]() powered by <img src="https://streamlit.io/images/brand/streamlit-mark-color.svg" width="30" height="30"
 
 ## Roadmap
 
@@ -61,12 +61,12 @@ Conversion app with light and dark mode gif.
 - [ ] RESTful API with FastAPI
 - [ ] Telegram-Bot Telegram Bot with Telebot
 - [ ] Dockerize  
-    [ ] Publish Docker image to GitHub container registry
+    - [ ] Publish Docker image to GitHub container registry
 - [ ] Multi-language Support
-    [x] English
-    [ ] Amharic
-    [ ] Oromo
-    [ ] Tigrinya
+    - [x] English
+    - [ ] Amharic
+    - [ ] Oromo
+    - [ ] Tigrinya
 
 > See the [open issues](https://github.com/kidistbedilu/conversion/issues) for a full list of proposed features and known issues.
 
