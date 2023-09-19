@@ -33,6 +33,7 @@ def c_to_f():
 def f_to_c():
     st.session_state.c = (st.session_state.f-32)*5/9
 
+st.markdown('##### Data')
 #col1, buff, col2 = st.columns([2,1,2])
 col1, buff, col2 = st.columns(3)
 with col1:
@@ -40,28 +41,36 @@ with col1:
 
 with col2:
     megabit = st.number_input('Megabit per second (Mbps):', key='Mbps', on_change = Mbps_to_MBps)
+st.markdown('***')
 
+st.markdown('##### Time')
 col3, buff, col4 = st.columns(3)
 with col3:
     hour = st.number_input('Hour (h):', key='h', on_change = h_to_d)
 
 with col4:
     day = st.number_input('Day (d):', key='d', on_change = d_to_h)
+st.markdown('***')
 
+st.markdown('##### Weight')
 col5, buff, col6 = st.columns(3)
 with col5:
     pounds = st.number_input('Pounds (lbs):', key='lbs', on_change = lbs_to_kg)
 
 with col6:
     kilogram = st.number_input('Kilograms (kg):', key='kg', on_change = kg_to_lbs)
+st.markdown('***')
 
+st.markdown('##### Length')
 col7, buff, col8 = st.columns(3)
 with col7:
     inch = st.number_input('Inch (in):', key='inn', on_change = inn_to_cm)
 
 with col8:
     centimeter = st.number_input('Centimeter (cm):', key='cm', on_change = cm_to_inn)
+st.markdown('***')
 
+st.markdown('##### Temperature')
 col9, buff, col10 = st.columns(3)
 with col9:
     celsius = st.number_input('Celsius (\N{DEGREE SIGN}C):', key='c', on_change = c_to_f)
