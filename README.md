@@ -60,7 +60,7 @@ Conversion app with light and dark mode gif.
 - [x] streamlit app
 - [ ] RESTful API with FastAPI
 - [ ] Telegram-Bot Telegram Bot with Telebot
-- [ ] Dockerize  
+- [x] Dockerize  
     - [ ] Publish Docker image to GitHub container registry
 - [ ] Multi-language Support
     - [x] English
