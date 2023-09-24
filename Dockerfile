@@ -12,4 +12,4 @@ CMD ["streamlit", "run", "main.py", "--server.port=8501", "--server.address=0.0.
 
 # RUN
 # docker build . -t app-name
-# docker run -p 8080:8080 app-name
+# docker run -p 8501:8501 app-name
