@@ -55,13 +55,47 @@ Conversion app with light and dark mode gif.
 
 [conversion app demo](https://conversion.streamlit.app) powered by [Streamlit Community Cloud](https://streamlit.io/cloud) ![Streamlit-logo](assets/streamlit-logo.png)
 
+### GitHub Container Registry / GHCR
+
+1. login to GitHub
+2. click `Settings` > `Developer settings` > `Personal access tokens` > `Tokens (classic)` > `Generate new token` > `Generate new token (classic)`
+   1. type `GHCR-TOKEN` under **Note**
+   2. select `90 days` under **Expiration**
+   3. select `write:packages` & `delete:packages` under **Select scopes**
+   4. click `Generate token`
+   5. copy the generated token for example `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`
+3. export token to our machine `export GHCR_KEY=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`
+4. see our token `echo $GHCR_KEY`
+5. login to GHCR `echo $GHCR_KEY | docker login ghcr.io -u kidistbedilu --password-stdin`
+6. navigate to your image file location `cd src/conversion && ls`
+7. build the image `docker build . -t ghcr.io/kidistbedilu/conversion:latest`
+8. push image to GitHub packages `docker push ghcr.io/kidistbedilu/conversion:latest`
+9. login to GitHub and goto your `Packages` tab or `https://github.com/kidistbedilu?tab=packages` we can see the image
+10. change the package/image from `Private` to `Public`
+	1. select package name `conversion`
+	2. click on `Package settings`
+	3. under **Change package visibility** to `Change visibility` > `Public` > type `conversion` > `I understand the consequences, change package visibility`
+11. pull image `docker pull ghcr.io/kidistbedilu/conversion:latest`
+12. run container `docker run -p 8501:8501 ghcr.io/kidistbedilu/conversion:latest` or change port `docker run -p 80:8501 ghcr.io/kidistbedilu/conversion:latest`
+13. open browser & test Streamlit app `0.0.0.0:8501` or at port 80 `0.0.0.0:80` | `0.0.0.0`
+14. add ReadMe by connecting to a repository  
+	1. select package name `conversion`
+	2. click on `Package settings`
+	3. click on `Add Repository`
+	4. select repo for example `conversion` > `Add repositories`
+15. setup GitHub actions by connecting to a repository 
+	1. select package name `conversion`
+	2. click on `Package settings`
+	3. click on `Add Repository`
+	4. create GitHub action workflow
+
 ## Roadmap
 
 - [x] streamlit app
 - [ ] RESTful API with FastAPI
 - [ ] Telegram-Bot Telegram Bot with Telebot
 - [x] Dockerize  
-    - [ ] Publish Docker image to GitHub container registry
+    - [x] Publish Docker image to GitHub container registry
 - [ ] Multi-language Support
     - [x] English
     - [ ] Amharic
